@@ -8,9 +8,9 @@ export class Game extends Scene {
   playerPosition = {
     position: 1,
     coords: [
-      { x: 150, y: window.innerHeight * 0.2 },
-      { x: 150, y: window.innerHeight / 2 },
-      { x: 150, y: window.innerHeight * 0.8 },
+      { x: window.innerWidth * 0.1, y: window.innerHeight * 0.2 },
+      { x: window.innerWidth * 0.1, y: window.innerHeight / 2 },
+      { x: window.innerWidth * 0.1, y: window.innerHeight * 0.8 },
     ],
   };
 
@@ -25,7 +25,7 @@ export class Game extends Scene {
 
   create() {
     this.player = this.physics.add.sprite(
-      150,
+      window.innerWidth * 0.1,
       window.innerHeight / 2,
       "player"
     );
