@@ -18,23 +18,12 @@ export class Game extends Scene {
     super("Game");
   }
 
-  preload() {
-    this.load.setPath("assets");
-
-    // this.load.image("background", "cenario.png");
-    this.load.image("logo", "title.png");
-    this.load.spritesheet("player", "player.png", {
-      frameWidth: 150,
-      frameHeight: 144,
-    });
+  init() {
+    // Fadein camera quando a começa
+    this.cameras.main.fadeIn(500);
   }
 
   create() {
-    // this.add.image(window.innerWidth / 2, window.innerHeight / 2, "background");
-    this.add
-      .image(window.innerWidth / 2, window.innerHeight / 2, "logo")
-      .setDepth(100);
-
     this.player = this.physics.add.sprite(
       150,
       window.innerHeight / 2,
