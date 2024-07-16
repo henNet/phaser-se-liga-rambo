@@ -8,6 +8,10 @@ export class MainMenu extends Scene {
   preload() {
     this.load.setPath("assets");
     this.load.image("logo", "title.png");
+    this.load.spritesheet("life", "life.png", {
+      frameWidth: 82,
+      frameHeight: 82,
+    });
     this.load.spritesheet("player", "player.png", {
       frameWidth: 150,
       frameHeight: 144,

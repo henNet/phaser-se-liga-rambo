@@ -20,6 +20,7 @@ const config = {
   scale: {
     mode: Scale.FIT,
     autoCenter: Scale.CENTER_BOTH,
+    orientation: "landscape",
   },
   scene: [MainMenu, MainGame],
 };
